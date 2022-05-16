@@ -1,0 +1,101 @@
+* Parameters                                                                              
+                                                                                          
+* week considered in the optimization                                                     
+active_weeks                                                  =    1                  ;   
+                                                                                          
+* marginal cost of PV [eur/kWh]                                                           
+c_pv                                                          =    5E-006             ;   
+                                                                                          
+* marginal cost of battery supply [eur/kWh]                                               
+c_bess_discharge                                              =    4E-006             ;   
+                                                                                          
+* marginal cost of diesel (FUEL COST) [eur/l]                                             
+c_diesel                                                      =    1                  ;   
+                                                                                          
+* cost of not served energy                                                               
+c_nse                                                         =    0                  ;   
+                                                                                          
+* quantity customers type A (Residents)                                                   
+q_A                                                           =    2                  ;   
+                                                                                          
+* quantity customers type B (Productive Users)                                            
+q_B                                                           =    1                  ;   
+                                                                                          
+* Price for Customers of Type A [eur/kWh]                                                 
+p_A                                                           =    0.5                ;   
+                                                                                          
+* Price for Customers of Type B [eur/kWh]                                                 
+p_B                                                           =    0.2                ;   
+                                                                                          
+* maximum output diesel generation [kW]                                                   
+E_diesel                                                      =    15                 ;   
+                                                                                          
+* maximum state of charge [kWh]                                                           
+SOC_max                                                       =    100                ;   
+                                                                                          
+* minimum state of charge [kWh]                                                           
+SOC_min                                                       =    30                 ;   
+                                                                                          
+* Charge-discharge Limit / storage maximal consumption [kWh]                              
+L_charge                                                      =    30                 ;   
+                                                                                          
+* Discharge/Charge  Limit / storage maximal generation [kWh]                              
+L_discharge                                                   =    30                 ;   
+                                                                                          
+* efficiency of  BESS when charging  [p.u]                                                
+eta_char_bess                                                 =    0.95               ;   
+                                                                                          
+* efficiency of BESS  when discharging  [p.u]                                             
+ eta_disc_bess                                                =    0.9                ;   
+                                                                                          
+* initial storage capacity [kWh]                                                          
+SOC_ini                                                       =    50                 ;   
+                                                                                          
+* maximum electricity flow to or from the grid node [kW]                                  
+G_max                                                         =    25                 ;   
+                                                                                          
+*minimum electricity flow to or from the grid node [kW]                                   
+G_min                                                         =    0                  ;   
+                                                                                          
+* Lower bound of diesel generator [kW]                                                    
+l_diesel                                                      =    3                  ;   
+                                                                                          
+*start up cost for running diesel  [eur/start]                                            
+STC_diesel                                                    =    0.15               ;   
+                                                                                          
+*minimum running time once diesel is turned on [hours]                                    
+MRT                                                           =    1                  ;   
+                                                                                          
+* Minimum resting time before turnin diesel on again [hours]                              
+RT                                                            =    1                  ;   
+                                                                                          
+* Intercept coefficient of the fuel curve                                                 
+b                                                             =    0.0133333333333333 ;   
+                                                                                          
+* Slope coefficient of the fuel curve [L/hr/kW]                                           
+m                                                             =    0.306666666666667  ;   
+                                                                                          
+* Average efficiency parameter of diesel genset                                           
+eta_diesel                                                    =    0.245              ;   
+                                                                                          
+* Self-discharge rate of the battery [percent]                                            
+sigma                                                         =    5.6E-005           ;   
+                                                                                          
+* Nominal power of PV inverter [kW]                                                       
+E_inv_pv                                                      =    30                 ;   
+                                                                                          
+* Average efficiency of PV inverter                                                       
+eta_inv                                                       =    1                  ;   
+                                                                                          
+* Nominal power of BESS inverter-rectifier [kW]                                           
+E_ir                                                          =    33                 ;   
+                                                                                          
+* Average efficiency of BESS inverter                                                     
+eta_BESS_inv                                                  =    0.94               ;   
+                                                                                          
+* Average efficiency of rectifier                                                         
+eta_rect                                                      =    0.94               ;   
+                                                                                          
+* Shortage level for customer b                                                           
+reliab_b                                                      =    0.35               ;   
+                                                                                          

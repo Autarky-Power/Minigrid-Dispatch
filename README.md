@@ -1,4 +1,4 @@
-# Minigrid-Dispatch
+# Grid connected Minigrid-Operation considering main grid's outages
 
 You can find the GAMS optimization program used for the optimal dispatch of grid-connected mini-grids. 
 In the data file you can find the inputs you need. 
